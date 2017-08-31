@@ -9,13 +9,16 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <style type="text/css">
-                #html_output {
-                    border:0px;
-                    width:100%;
-                    
-                }
-            </style>
+        <style type="text/css">
+            .navbar-right {
+                margin-top:16px;
+                margin-right:10px;
+            }    
+            .auth {
+                color:grey;
+            }
+            
+        </style>
         </head>
 
 <body>
@@ -24,6 +27,9 @@
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Web development coding ground</a>
     </div>
+      <nav class="nav navbar-nav navbar-right">
+          <p class="auth">Designed and developed by <a href="https://github.com/yashrajb" target=_blank>Yashraj Basan</a></p>
+    </nav>
     </div>
     </nav>
     
@@ -42,22 +48,12 @@
         
         <div class="col-md-4">
                 <div class="form-group">
-                    <textarea  class="form-control" cols=20 rows=20 placeholder="Javascript" id="javascript" onkeyup="js_output();" ></textarea>
+                    <textarea  class="form-control" cols=20 rows=20 placeholder="Javascript" id="javascript" onkeydown="js_output();" ></textarea>
                 </div>
             </div>
         
         
     </div>
-   
-    
-    <main id="html_output">
-    
-    </main>
-    
-    
-
-
-
 <script src="main.js"></script>
 </body>
 </html>

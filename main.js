@@ -1,17 +1,31 @@
- var main_tag = document.getElementsByTagName("main")[0];
+            var main = document.createElement("main");
+            document.body.appendChild(main);
+            var main_tag =  document.getElementsByTagName("main")[0];
+            
             var html = document.createElement("html");
             main_tag.appendChild(html);
+            var html_tag = main_tag.getElementsByTagName("html")[0];
+
             var head = document.createElement("head");
-            html.appendChild(head);
-            var css = document.createElement("style");
-            head.appendChild(css);
+            html_tag.appendChild(head);
+            var head_tag = main_tag.getElementsByTagName("head")[0];
+            
+            var style = document.createElement("style");
+            head_tag.appendChild(style);
+            style.setAttribute("type","text/css");
+            var style_tag = head_tag.getElementsByTagName("style")[0];
+
             var body = document.createElement("body");
-            html.appendChild(body);
-            var body_tag = main_tag.getElementsByTagName("body")[0];
-            var main_style = main_tag.getElementsByTagName("style")[0];
-            main_style.setAttribute("type","text/css");
-            var js = document.createElement("script");
-            body_tag.appendChild(js);
+            html_tag.appendChild(body);
+            var body_tag = html_tag.getElementsByTagName("body")[0];
+
+            var script = document.createElement("script");
+            body_tag.appendChild(script);
+            var script_tag = body_tag.getElementsByTagName("script")[0];
+
+            var html_input = document.getElementById("html").value;
+            var css_input = document.getElementById("css").value;
+            var js_input = document.getElementById("javascript").value;
             
             
         
@@ -35,15 +49,12 @@
        }
 
         function js_output() {
-            if(document.getElementById("js").value.search(/\?\p\h\p(\s|\?\>)/)>=0) { 
+            if(document.getElementById("javascript").value.search(/\?\p\h\p(\s|\?\>)/)>=0) {
                 document.write("Error");
+            }else {
+                main_tag.getElementsByTagName("script")[0].innerHTML = eval(document.getElementById("javascript").value);
             }
-            else {
-    main_tag.getElementsByTagName("script")[0].innerHTML = document.getElementById("javascript").value;
-            }
-
         }
-        
         
 
 
