@@ -1,0 +1,85 @@
+<!Doctype html>
+    <html>
+        <head>
+            <title>Coding ground</title>
+           
+            <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <style>
+            .navbar {
+            background-color:black;
+            padding:10px 0px!important;
+            border:0px!important;
+            
+        }
+        nav .navbar-brand{
+            color:white!important;
+            font-family:'Arvo';
+        }
+        .navbar a {
+            color:white!important;
+            font-family:'Arvo';
+        }
+       .navbar-right {
+            margin-right:4px;
+        }
+            
+            .rows {
+                margin-top:90px;
+            }
+            
+        </style>
+        </head>
+
+<body>
+    
+    <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">{F}rontend coding ground</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.w3schools.com/html/default.asp">Html</a></li>
+          <li><a href="https://www.w3schools.com/css/default.asp">Css</a></li>
+          <li><a href="https://www.w3schools.com/js/default.asp">Javascript</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main">  
+    <div class="rows">
+        <div class="col-md-4">
+            <div class="form-group">
+                <textarea  class="form-control" cols=20 rows=20 placeholder="HTML" id="html" onkeyup="html_output();"></textarea>
+            </div>
+        </div>
+            
+            <div class="col-md-4">
+                <div class="form-group">
+                    <textarea  class="form-control" cols=20 rows=20 placeholder="CSS" id="css" onkeyup="css_output();" ></textarea>
+                </div>
+            </div>
+        
+        <div class="col-md-4">
+                <div class="form-group">
+                    <textarea  class="form-control" cols=20 rows=20 placeholder="Javascript" id="javascript" onkeydown="js_output();" ></textarea>
+                </div>
+            </div>
+        
+        
+    </div>
+</div>  
+<script src="js/ground.js"></script>
+</body>
+</html>

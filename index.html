@@ -1,59 +1,99 @@
-<!Doctype html>
-    <html>
-        <head>
-            <title>Coding ground</title>
-           
-            <title>Bootstrap Example</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-        <style type="text/css">
-            .navbar-right {
-                margin-top:16px;
-                margin-right:10px;
-            }    
-            .auth {
-                color:grey;
-            }
-            
-        </style>
-        </head>
-
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="css/main.css" rel="stylesheet">
+</head>
 <body>
-<nav class="navbar navbar-default">
+
+<nav class="navbar navbar-default navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">Web development coding ground</a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">{F}rontend coding ground</a>
     </div>
-      <nav class="nav navbar-nav navbar-right">
-          <p class="auth">Designed and developed by <a href="https://github.com/yashrajb" target=_blank>Yashraj Basan</a></p>
-    </nav>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="https://www.w3schools.com/html/default.asp">Html</a></li>
+          <li><a href="https://www.w3schools.com/css/default.asp">Css</a></li>
+          <li><a href="https://www.w3schools.com/js/default.asp">Javascript</a></li>
+          <li><a href="#abt-dev">About developer</a></li>
+        <li><a class="btn btn-danger" href="ground.html">TRY IT OUT</a></li>
+      </ul>
     </div>
-    </nav>
+  </div>
+</nav>
     
+<div class="jumbotron big-image">
+    <h1>Try our coding ground now</h1>
+    <a href="#three-rows">Learn Front-end</a>
+    <a href="ground.html">Try it out</a>
+</div>
+    
+<div class="main">
+
+<div class="container three-rows" id="three-rows">
     <div class="rows">
-        <div class="col-md-4">
-            <div class="form-group">
-                <textarea  class="form-control" cols=20 rows=20 placeholder="HTML" id="html" onkeyup="html_output();"></textarea>
-            </div>
+        <div class="col-sm-4 ">
+            <img class="images img-responsive center-block" src="images/HTML5_1Color_Black.png" alt="html_image"/>
+            <div class="text">HTML is used to specify whether your web content should be recognized as a paragraph, list, heading, link, image, multimedia player, form, or one of many other available elements or even a new element that you define.</div>
+            <a href="https://www.w3schools.com/html/default.asp" class="btn btn-primary btn-block" target=_blank>Learn HTML</a>
         </div>
-            
-            <div class="col-md-4">
-                <div class="form-group">
-                    <textarea  class="form-control" cols=20 rows=20 placeholder="CSS" id="css" onkeyup="css_output();" ></textarea>
-                </div>
-            </div>
-        
-        <div class="col-md-4">
-                <div class="form-group">
-                    <textarea  class="form-control" cols=20 rows=20 placeholder="Javascript" id="javascript" onkeydown="js_output();" ></textarea>
-                </div>
-            </div>
-        
-        
+        <div class="col-sm-4">
+         <img class="images img-responsive center-block" src="images/css3-01_icon-icons.com_50918.png" alt="css_image"/>
+            <div class="text">Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML.CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</div>
+            <a href="https://www.w3schools.com/css/default.asp" class="btn btn-primary btn-block" target=_blank>Learn CSS</a>
+        </div>
+        <div class="col-sm-4">
+        <img class="images img-responsive center-block" src="images/javascript.png" alt="js_image"/>
+            <div class="text">JavaScript is a programming language that adds interactivity to your website (for example: games, responses when buttons are pressed or data entered in forms, dynamic styling, animation).Javascript is interpreted language </div>
+            <a href="https://www.w3schools.com/js/default.asp" class="btn btn-primary btn-block" target=_blank>Learn Javascript</a>
+        </div>
+      </div>
+</div>
+    
+    <div class="container">
+        <h2 style="border-bottom:1px solid grey;padding:10px;">About developer</h2>
     </div>
-<script src="main.js"></script>
+    
+<div class="abt-dev">
+    <div class="container">
+        <div class="rows">
+            <div class="col-lg-3">
+                <img class="img-responsive img-rounded" src="https://avatars3.githubusercontent.com/u/24502137?v=4&s=400"/>
+            </div>
+            <div class="col-lg-9">
+            <p>Hey my name is yashraj i am passionate web developer and web designer and web enthusiast.i am from diu,india.currently,i am doing engineering in computer science.In 9<sup>th</sup>class i got interest in computers.i started learning command line and batch programming.after, creating small viruses i started web development.i created small websites for communities for free.after,doing some frondend projects i learned server side languages like php,node.js.my favorite stack is php and mysql.i am also learning now nosql database like Mangodb.i also created project with google firebase.if you want any website contact me.</p>
+            <h3>Let's talk</h3>
+            <hr>
+               
+                <a href="https://www.facebook.com/yashraj.basan" class="social fb" title="facebook"><i class="fa fa-facebook-square" style="font-size:36px"></i></a>
+                <a href="https://www.instagram.com/yashraj_basan/" class="social in" title="instagram"><i class="fa fa-instagram" style="font-size:36px"></i></a>
+                <a href="https://github.com/yashrajb" class="social git" title="github"><i class="fa fa-github" style="font-size:36px"></i></a>
+            
+            </div>
+        
+        </div>
+    </div>
+</div>
+    
+<div class="jumbotron footer">
+    <div class="brand text-center"><a href="#">{F}</a></div>
+    <div class="footer text-center">&copy; frontend coding ground</div>
+    <div class="footer text-center">Designed and developed by <a href="#"> Yashraj Basan</a></div>
+</div>
+</div>
 </body>
 </html>
